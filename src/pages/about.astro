@@ -1,0 +1,77 @@
+---
+import experiences from "../collections/experiences.json";
+import AboutExperience from "../components/about-experience.astro";
+import PageHeading from "../components/heading.astro";
+import Layout from "../layouts/main.astro";
+---
+
+<Layout title="About Me">
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    <PageHeading
+      title="About Me"
+      description="Hello 👋 Je suis développeur et passioné de cybersécurité, désormais en freelance."
+    />
+
+    <img src="/assets/images/about.jpg" class="relative z-30 w-full my-10 rounded-xl" />
+
+    <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">Short Bio</h2>
+    <p
+      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
+    >
+        Depuis toujours, je suis passionné par l'informatique, c'est pourquoi j'ai débuté mes études par un DUT Informatique avec un focus sur le C++. J'ai ensuite poursuivi avec une Licence Professionnelle Métiers de l'Informatique, durant laquelle j'ai effectué une alternance en tant que développeur Unity.
+        <br />
+        J'ai finalement choisi de me réorienter en cybersécurité dans l'espoir de contribuer à la cyberdéfense de nos données dans une société de plus en plus numérisée. C'est pourquoi, lors de la rentrée de septembre 2021, j'ai commencé une formation "Expert de la Sécurité des Données, des Systèmes et des Réseaux" (Titre RNCP Niveau 7) au sein de l'École 2600.
+        <br />
+        Au cours de ces six années d'études, j'ai acquis des compétences en développement, tout particulièrement en C++ et en C#, mais aussi en C et en Python. Le terminal ne me fait pas peur non plus ; même s'il est impressionnant au premier abord, je parviens à le maîtriser pour atteindre mes objectifs ! De plus, la POO m'est familière (et sinon, à quoi bon faire du C++ ?). Enfin, j'utilise Git pour versionner mes projets (on n'est jamais à l'abri d'une erreur, alors autant prendre les devants).
+        <br />
+        Lors de ces trois dernières années, j'ai eu la chance de découvrir les enjeux de la cybersécurité, des techniques offensives et défensives, ainsi que l'administration des systèmes Windows et Linux, mais aussi de la gestion. de projet et de la gestion de crise. 
+        <br />
+        J'ai également développé d'autres centres d'intérêt comme les jeux vidéo, depuis mon premier jeu Age Of Empires premier du nom (oui, il est sorti avant même que je sois né), et ma première console, la Mega Drive (qui est encore plus ancienne). Ces dernières années, les jeux que j'affectionne particulièrement sont les jeux compétitifs et/ou communautaires. Ces derniers temps, c'est Elden Ring qui m'apprend à ne jamais abandonner !
+        <br />
+        Les jeux de rôle et de plateau constituent aussi une part importante de mes hobbies. Alimenté par ma passion pour la littérature fantastique, Dungeons & Dragons est mon jeu de rôle privilégié. Pour des champs de bataille de plus grande envergure, je préfère Warhammer 40k pour sa science-fiction sombre et brutale.
+        <br />
+        Heureusement, il m'arrive aussi parfois de sortir ;D
+        J'apprécie tout particulièrement la photographie, que je pratique lors de mes randonnées et vacances. Je suis aussi sportif ; je vais à la salle plusieurs fois par semaine et je fais du handball, que j'apprécie tout particulièrement pour sa vitesse.
+        <br />
+        Merci d'être arrivé jusque-là !
+        <br />
+        Si mon profil vous intéresse, n'hésitez pas à me contacter !
+    </p>
+
+    <h2
+      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+      Experiences
+    </h2>
+    <div class="px-5 py-10">
+      {
+        experiences.map((experience) => {
+          return (
+            <div class="pb-10 border-l border-gray-200 last:border-l-0 dark:border-neutral-700">
+              <AboutExperience
+                dates={experience.dates}
+                role={experience.role}
+                company={experience.company}
+                description={experience.description}
+                logo={experience.logo}
+              />
+            </div>
+          )
+        })
+      }
+    </div>
+
+    <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Let's Connect</h2>
+    <p
+      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
+    >
+      Si vous souaitez rester à jour avec mon travail, assurez-vous de <a
+        href="https://www.linkedin.com/in/marcvialatte/"
+        target="_blank"
+        class="text-indigo-600 underline">me suivre sur linkedin</a
+      >, ou vous pouvez m'envoyer un <a href="mailto:marc@vialatte.dev" class="text-indigo-600 underline"
+        >email</a
+      > et je serai heureux de vous répondre.
+    </p>
+  </section>
+</Layout>

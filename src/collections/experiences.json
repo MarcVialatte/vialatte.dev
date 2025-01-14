@@ -1,0 +1,23 @@
+[
+	{
+		"dates": "Janvier 2025 · Present",
+		"role": "Micro entrepreneur",
+		"company": "Marc Vialatte",
+		"description": "Micro entrepreneur en informatique : développement & cybersécurité",
+		"logo": "/assets/images/experiences/fta.ico"
+	},
+	{
+		"dates": "Octobre 2021 · Août 2024",
+		"role": "Assistant RSSI",
+		"company": "Banque Delubac & Cie",
+		"description": "Alternance en tant qu'assistant Responsable de la Sécurité des Systèmes d'Information.",
+		"logo": "/assets/images/experiences/delubac.ico"
+	},
+	{
+		"dates": "Septembre 2020 · Août 2021 ",
+		"role": "Développeur Unity",
+		"company": "Albyon",
+		"description": "Atlernance en tant que Développeur Unity Gameplay et Outils.",
+		"logo": "/assets/images/experiences/albyon.ico"
+	}
+]

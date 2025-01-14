@@ -1,0 +1,32 @@
+[
+	{
+		"name": "Bermud'Island",
+		"description": "Projet de Licence sous UE4.",
+		"image": "/assets/images/projects/tempmail.best.png",
+		"url": "https://dorianvidal.itch.io/bermudisland"
+	},
+	{
+		"name": "3D Game Cards",
+		"description": "Jeu de cartes en 3D multiplateforme.",
+		"image": "/assets/images/projects/dns.surf.png",
+		"url": "https://dns.surf"
+	},
+	{
+		"name": "Fallen",
+		"description": "Projet tuteuré de 2ème année de DUT.",
+		"image": "/assets/images/projects/html.zone.png",
+		"url": "https://html.zone"
+	},
+	{
+		"name": "REEM",
+		"description": "Petit jeu de gestion réalisé en groupe de 17 personnes.",
+		"image": "/assets/images/projects/sink.cool.png",
+		"url": "https://projetreem.github.io/"
+	},
+	{
+		"name": "Rocher St Michel d'Aiguilhe",
+		"description": "Projet tuteuré de 1ère année de DUT.",
+		"image": "/assets/images/projects/broadcast-channel.png",
+		"url": "https://github.com/ccbikai/BroadcastChannel"
+	}
+]
