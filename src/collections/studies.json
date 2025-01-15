@@ -1,0 +1,20 @@
+[
+	{
+		"dates": "Septembre 2021 · Août 2024",
+		"school": "Ecole 2600",
+		"description": "Expert de la Sécurité des Données, des Systèmes et des Réseaux",
+		"logo": "/assets/images/schools/ecole2600.ico"
+	},
+	{
+		"dates": "Septembre 2020 · Août 2021",
+		"school": "Université Clermont Auvergne",
+		"description": "Licence professionnelle, Métiers de l'informatique : conduite de projets",
+		"logo": "/assets/images/schools/uca.ico"
+	},
+	{
+		"dates": "Septembre 2018 · Août 2020",
+		"school": "Université Clermont Auvergne",
+		"description": "DUT Informatique Graphique",
+		"logo": "/assets/images/schools/uca.ico"
+	}
+]
