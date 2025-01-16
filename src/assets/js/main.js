@@ -22,26 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
 		localStorage.getItem("dark_mode") === "true"
 	) {
 		window.darkMode = true;
-		showNight();
+		showDark();
 	} else {
-		showDay();
+		showLight();
 	}
 	stickyHeaderFuncionality();
 	applyMenuItemClasses();
 	evaluateHeaderPosition();
 	mobileMenuFunctionality();
 });
-
-// window.toggleDarkMode = function(){
-//     document.documentElement.classList.toggle('dark');
-//     if(document.documentElement.classList.contains('dark')){
-//         localStorage.setItem('dark_mode', true);
-//         window.darkMode = true;
-//     } else {
-//         window.darkMode = false;
-//         localStorage.setItem('dark_mode', false);
-//     }
-// }
 
 window.stickyHeaderFuncionality = () => {
 	window.addEventListener("scroll", () => {
@@ -74,14 +63,14 @@ document.getElementById("darkToggle").addEventListener("click", () => {
 
 	if (document.documentElement.classList.contains("dark")) {
 		localStorage.removeItem("dark_mode");
-		showDay(true);
+		showLight(true);
 	} else {
 		localStorage.setItem("dark_mode", true);
-		showNight(true);
+		showDark(true);
 	}
 });
 
-function showDay(animate) {
+function showLight(animate) {
 	document.getElementById("sun").classList.remove("setting");
 	document.getElementById("moon").classList.remove("rising");
 
@@ -94,8 +83,8 @@ function showDay(animate) {
 	}
 
 	setTimeout(() => {
-		document.getElementById("dayText").classList.remove("hidden");
-		document.getElementById("nightText").classList.add("hidden");
+		document.getElementById("lightText").classList.remove("hidden");
+		document.getElementById("darkText").classList.add("hidden");
 
 		document.getElementById("moon").classList.add("hidden");
 		document.getElementById("sun").classList.remove("hidden");
@@ -107,7 +96,7 @@ function showDay(animate) {
 	}, timeout);
 }
 
-function showNight(animate) {
+function showDark(animate) {
 	document.getElementById("moon").classList.remove("setting");
 	document.getElementById("sun").classList.remove("rising");
 
@@ -120,8 +109,8 @@ function showNight(animate) {
 	}
 
 	setTimeout(() => {
-		document.getElementById("nightText").classList.remove("hidden");
-		document.getElementById("dayText").classList.add("hidden");
+		document.getElementById("darkText").classList.remove("hidden");
+		document.getElementById("lightText").classList.add("hidden");
 
 		document.getElementById("sun").classList.add("hidden");
 		document.getElementById("moon").classList.remove("hidden");
