@@ -6,22 +6,22 @@
 		"url": "https://dorianvidal.itch.io/bermudisland"
 	},
 	{
-		"name": "3D Game Cards",
-		"description": "Jeu de cartes en 3D multiplateforme.",
-		"image": "/assets/images/projects/3dgamecards.png",
-		"url": "https://github.com/MarcVialatte-Unity-Projects/Unity-3D-Card-Game"
-	},
-	{
 		"name": "Fallen",
 		"description": "Projet tuteuré de 2ème année de DUT.",
 		"image": "/assets/images/projects/fallen.png",
-		"url": ""
+		"url": "https://github.com/MarcVialatte-DUT/Fallen"
 	},
 	{
 		"name": "REEM",
 		"description": "Petit jeu de gestion réalisé en groupe de 17 personnes.",
 		"image": "/assets/images/projects/reem.png",
 		"url": "https://projetreem.github.io/"
+	},
+	{
+		"name": "3D Game Cards",
+		"description": "Jeu de cartes en 3D multiplateforme.",
+		"image": "/assets/images/projects/3dgamecards.png",
+		"url": "https://github.com/MarcVialatte-LP/Unity-3D-Card-Game"
 	},
 	{
 		"name": "Rocher St Michel d'Aiguilhe",
