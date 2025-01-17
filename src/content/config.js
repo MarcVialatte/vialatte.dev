@@ -1,14 +1,13 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection, z } from 'astro:content';
+import { glob, file } from 'astro/loaders'; // Not available with legacy API
 
-const postCollection = defineCollection({
-	type: "content",
-	schema: z.object({
-		title: z.string(),
-		description: z.string(),
-		dateFormatted: z.string(),
-	}),
+const posts = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/posts" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    pubDate: z.string(),
+  })
 });
 
-export const collections = {
-	post: postCollection,
-};
+export const collections = { posts };
