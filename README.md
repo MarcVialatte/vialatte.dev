@@ -33,6 +33,7 @@ Ce site a été construit à l'aide d'un template moderne et flexible que vous p
 ## 🚀 En savoir plus
 
 Pour plus de détails sur mon parcours, mes compétences, et mes services, explorez le site !
+
 ---
 
 Merci de votre visite et à bientôt ! 😊
