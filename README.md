@@ -24,8 +24,7 @@ Ce site a été construit à l'aide d'un template moderne et flexible que vous p
 
 ## 📑 Contenu principal
 
-- Articles et conseils sur des sujets techniques.
-- Informations sur mes services de freelance.
+- Articles et experimentations sur des sujets techniques.
 - Un aperçu de mon parcours et de mes compétences.
 
 ---
